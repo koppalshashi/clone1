@@ -2,12 +2,14 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
 }
 
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
+    
 }
 
 header {
@@ -15,6 +17,7 @@ header {
     color: #ffffff;
     padding: 20px 0;
     text-align: center;
+    
 }
 
 header .logo h1 {
@@ -24,11 +27,16 @@ header .logo h1 {
 nav ul {
     list-style: none;
     padding: 0;
+    flex: 1;
+    text-align: right;
+    justify-content:top;
 }
 
 nav ul li {
     display: inline;
     margin: 0 15px;
+   
+
 }
 
 nav ul li a {
@@ -94,7 +102,64 @@ footer {
     position: relative; /* Positioning */
     z-index: 1000; /* Ensure it appears above other content */
 }
-
+/* timetable */
 marquee {
     width: 100%; /* Full width */
 }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+.timetable {
+    display: flex;
+    justify-content: space-between; /* Space between the two tables */
+    
+}
+table {
+    border-collapse: collapse;
+    width: 103%; /* Adjust width as needed */
+    margin-bottom: 20px;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f4f4f4;
+}
+h4 {
+    margin-top: 20px;
+}
+
+.timetable {
+    display: flex;
+    justify-content: space-between; /* Space between the two tables */
+    margin-bottom: 20px; /* Space below the timetable section */
+}
+
+.monday-timetable,
+.tuesday-timetable,
+.Wednesday-timetable,
+.Thursday-timetable,
+.Friday-timetable,
+.Saturady-timetable {
+    width: 40%; /* Adjust width as needed */
+    margin: 0 10px; /* Reduce horizontal margin to bring tables closer */
+}
+/* .timetable end */
+
+/* time */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: left;
+}
+.date-time {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+/* time :end */
