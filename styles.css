@@ -98,7 +98,7 @@ footer {
     padding: 10px 0; /* Padding for the ticker */
     text-align: center; /* Center the text */
     font-weight: bold; /* Bold text */
-    font-size: 20px; /* Font size */
+    font-size: 30px; /* Font size */
     position: relative; /* Positioning */
     z-index: 1000; /* Ensure it appears above other content */
 }
