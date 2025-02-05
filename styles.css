@@ -157,9 +157,9 @@ body {
     text-align: left;
 }
 .date-time {
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin-bottom: 20px;
     font-weight: bold;
-    text-align: left;
+    text-align: center;
 }
 /* time :end */
