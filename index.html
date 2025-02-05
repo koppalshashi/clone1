@@ -3,30 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Study With Friends</title> <!-- Corrected title tag -->
-    <link rel="stylesheet" href="styles.css">
+    <title>Study With Friends</title>
+    <link rel="stylesheet" href="styless.css"> <!-- Corrected CSS link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body> 
     <header>
+        <nav>
+            <ul>
+                <li><a href="#" aria-label="About Us">About Us</a></li>
+                <li><a href="contact/contact01.html" aria-label="Contact">Contact</a></li>
+            </ul>
+        </nav>
         <div class="header-left">
             <img src="logo1.jpeg" alt="Logo" class="header-image">
         </div> 
         <div class="logo">
             <h1>FRIENDS GROUP</h1>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="contact/contact01.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+        
+    </header> 
 
     <!-- News Ticker -->
     <div class="news-ticker">
         <marquee behavior="scroll" direction="left">
-            <span>📢 New Course: Advanced Mathematics starting next week! | 📅 Upcoming Webinar on Career Guidance on March 15th! | 🎉 Join our Annual Day Celebration on April 20th!🍰🍰 Today is my birthday</span>
+            <span>📢 New Course: Advanced Mathematics starting next week! | 📅 Upcoming Webinar on Career Guidance on March 15th! | 🎉 Join our Annual Day Celebration on April 20th!</span>
         </marquee>
     </div>
 
@@ -36,51 +37,342 @@
             <p>Your gateway to access Updates</p>
         </section> 
 
-        <section class="courses">
-            <h3>Our Courses</h3>
-            <div class="course-item">
-                <i class="fas fa-book"></i>
-                <h4>BMATS301</h4>
-                <details>
-                    <summary>Details</summary>
-                    <a href="math.pdf">Notes</a><br>
-                    <a href="math.pdf">Previous papers</a>
-                </details> 
+        
+
+        <section class="timetable">
+            <!-- Monday Timetable -->
+            <div class="monday-timetable">
+                <h4>Monday</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Time</th>
+                            <th scope="col">Course</th>
+                            <th scope="col">Instructor</th>
+                            <th scope="col">Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>9:00 AM - 10:00 AM</td>
+                            <td>BMATS301</td>
+                            <td>Dr. Smith</td>
+                            <td><a href="bmats301_notes.pdf">Notes</a></td>
+                        </tr>
+                        <tr>
+                            <td>10:15 AM - 11:15 AM</td>
+                            <td>BCS302</td>
+                            <td>Prof. Johnson</td>
+                            <td><a href="bcs302_notes.pdf">Notes</a></td>
+                        </tr>
+                        <tr>
+                            <td>11:30 AM - 12:30 PM</td>
+                            <td>BCS303</td>
+                            <td>Dr. Lee</td>
+                            <td><a href="bcs303_notes.pdf">Notes</a></td>
+                        </tr>
+                        <tr>
+                            <td>1:00 PM - 2:00 PM</td>
+                            <td>BCS304</td>
+                            <td>Ms. Davis</td>
+                            <td><a href="bcs304_notes.pdf">Notes</a></td>
+                        </tr>
+                        <tr>
+                            <td>2:15 PM - 3:15 PM</td>
+                            <td>BMATS302</td>
+                            <td>Dr. Brown</td>
+                            <td><a href="bmats302_notes.pdf">Notes</a></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-            <div class="course-item">
-                <i class="fas fa-book"></i>
-                <h4>BCS302</h4>
-                <details>
-                    <summary>Details</summary>
-                    <a href="math.pdf">Notes</a><br>
-                    <a href="math.pdf">Previous papers</a>
-                </details> 
-            </div>
-            <div class="course-item">
-                <i class="fas fa-book"></i>
-                <h4>BCS303</h4>
-                <details>
-                    <summary>Details</summary>
-                    <a href="math.pdf">Notes</a><br>
-                    <a href="math.pdf">Previous papers</a>
-                </details>    
-            </div>
-            <div class="course-item">
-                <i class="fas fa-book"></i>
-                <h4>BCS304</h4>
-                <details>
-                    <summary>Details</summary>
-                    <a href="math.pdf">Notes</a><br>
-                    <a href="math.pdf">Previous papers</a>
-                </details>    
-            </div>
+        
+            <!-- Tuesday Timetable -->
+            <div class="tuesday-timetable">
+                <h4>Tuesday</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Time</th>
+                            <th scope="col">Course</th>
+                            <th scope="col">Instructor</th>
+                            <th scope="col">Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>9:00 AM - 10:00 AM</td>
+                            <td>BCS301</td>
+                            <td>Dr. White</td>
+                            <td><a href="bcs301_notes.pdf">Notes</a></td>
+                        </tr>
+                        <tr>
+                            <td>10:15 AM - 11:15 AM</td>
+                            <td>BMATS301</td>
+                            <td>Dr. Smith</td>
+                            <td><a href="bmats301_notes.pdf">Notes</a></td>
+                        </tr>
+                        <tr>
+                            <td>11:30 AM - 12:30 PM</td>
+                            <td>BCS302</td>
+                            <td>Prof. Johnson</td>
+                            <td><a href="bcs302_notes.pdf">Notes</a></td>
+                        </tr>
+                        <td>1:00 PM - 2:00 PM</td>
+                    <td>BCS303</td>
+                    <td>Dr. Lee</td>
+                    <td><a href="bcs303_notes.pdf">Notes</a></td>
+                </tr>
+                <tr>
+                    <td>2:15 PM - 3:15 PM</td>
+                    <td>BCS304</td>
+                    <td>Ms. Davis</td>
+                    <td><a href="bcs304_notes.pdf">Notes</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
         </section>
-    </main>
+        <br>
+<section class="timetable">       
+<!-- Wednesday Timetable -->
+<div class="Wednesday-timetable">
+<h4>Wednesday</h4>
+<table>
+    <thead>
+        <tr>
+            <th scope="col">Time</th>
+            <th scope="col">Course</th>
+            <th scope="col">Instructor</th>
+            <th scope="col">Notes</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>9:00 AM - 10:00 AM</td>
+            <td>BMATS301</td>
+            <td>Dr. Smith</td>
+            <td><a href="bmats301_notes.pdf">Notes</a></td>
+        </tr>
+        <tr>
+            <td>10:15 AM - 11:15 AM</td>
+            <td>BCS302</td>
+            <td>Prof. Johnson</td>
+            <td><a href="bcs302_notes.pdf">Notes</a></td>
+        </tr>
+        <tr>
+            <td>11:30 AM - 12:30 PM</td>
+            <td>BCS303</td>
+            <td>Dr. Lee</td>
+            <td><a href="bcs303_notes.pdf">Notes</a></td>
+        </tr>
+        <tr>
+            <td>1:00 PM - 2:00 PM</td>
+            <td>BCS304</td>
+            <td>Ms. Davis</td>
+            <td><a href="bcs304_notes.pdf">Notes</a></td>
+        </tr>
+        <tr>
+            <td>2:15 PM - 3:15 PM</td>
+            <td>BMATS302</td>
+            <td>Dr. Brown</td>
+            <td><a href="bmats302_notes.pdf">Notes</a></td>
+        </tr>
+    </tbody>
+</table>
+</div>
 
-    <footer>
-        <p>&copy; 2025 Friends Group. All rights reserved.</p>
-    </footer>
 
-    <script src="script.js"></script>
-</body>
-</html>
+  <!-- Thursday Timetable -->
+  <div class="Thursday-timetable">
+            <h4>Thursday</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Course</th>
+                        <th>Instructor</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>9:00 AM - 10:00 AM</td>
+                        <td>BCS301</td>
+                        <td>Dr. White</td>
+                        <td><a href="bcs301_notes.pdf">Notes</a></td>
+                    </tr>
+                    <tr>
+                        <td>10:15 AM - 11:15 AM</td>
+                        <td>BMATS301</td>
+                        <td>Dr. Smith</td>
+                        <td><a href="bmats301_notes.pdf">Notes</a></td>
+                    </tr>
+                    <tr>
+                        <td>11:30 AM - 12:30 PM</td>
+                        <td>BCS302</td>
+                        <td>Prof. Johnson</td>
+                        <td><a href="bcs302_notes.pdf">Notes</a></td>
+                    </tr>
+                    <tr>
+                        <td>1:00 PM - 2:00 PM</td>
+                        <td>BCS303</td>
+                        <td>Dr. Lee</td>
+                        <td><a href="bcs303_notes.pdf">Notes</a></td>
+                    </tr>
+                    <tr>
+                        <td>2:15 PM - 3:15 PM</td>
+                        <td>BCS304</td>
+                        <td>Ms. Davis</td>
+                        <td><a href="bcs304_notes.pdf">Notes</a></td>
+                    </tr>
+                </tbody>
+            </table>
+  </div>
+        </section>
+        <!-- Friday Timetable -->
+        <section class="timetable">
+            <div class="Friday-timetable">
+             <h4>Friday</h4>
+             <table>
+                 <thead>
+                     <tr>
+                         <th>Time</th>
+                         <th>Course</th>
+                         <th>Instructor</th>
+                         <th>Notes</th>
+                     </tr>
+                 </thead>
+                 <tbody>
+                     <tr>
+                         <td>9:00 AM - 10:00 AM</td>
+                         <td>BMATS301</td>
+                         <td>Dr. Smith</td>
+                         <td><a href="bmats301_notes.pdf">Notes</a></td>
+                     </tr>
+                     <tr>
+                         <td>10:15 AM - 11:15 AM</td>
+                         <td>BCS302</td>
+                         <td>Prof. Johnson</td>
+                         <td><a href="bcs302_notes.pdf">Notes</a></td>
+                     </tr>
+                     <tr>
+                         <td>11:30 AM - 12:30 PM</td>
+                         <td>BCS303</td>
+                         <td>Dr. Lee</td>
+                         <td><a href="bcs303_notes.pdf">Notes</a></td>
+                     </tr>
+                     <tr>
+                         <td>1:00 PM - 2:00 PM</td>
+                         <td>BCS304</td>
+                         <td>Ms. Davis</td>
+                         <td><a href="bcs304_notes.pdf">Notes</a></td>
+                     </tr>
+                     <tr>
+                         <td>2:15 PM - 3:15 PM</td>
+                         <td>BMATS302</td>
+                         <td>Dr. Brown</td>
+                         <td><a href="bmats302_notes.pdf">Notes</a></td>
+                     </tr>
+                     </tbody>
+                     </table>
+                 </div>
+               <!-- Saturady Timetable -->
+            <div class="Saturady-timetable">
+             <h4>Saturady</h4>
+             <table>
+                 <thead>
+                     <tr>
+                         <th>Time</th>
+                         <th>Course</th>
+                         <th>Instructor</th>
+                         <th>Notes</th>
+                       </tr>
+                      </thead>
+                 <tbody>
+                     <tr>
+                         <td>9:00 AM - 10:00 AM</td>
+                         <td>BMATS301</td>
+                         <td>Dr. Smith</td>
+                         <td><a href="bmats301_notes.pdf">Notes</a></td>
+                     </tr>
+                     <tr>
+                         <td>10:15 AM - 11:15 AM</td>
+                         <td>BCS302</td>
+                         <td>Prof. Johnson</td>
+                         <td><a href="bcs302_notes.pdf">Notes</a></td>
+                     </tr>
+                     <tr>
+                         <td>11:30 AM - 12:30 PM</td>
+                         <td>BCS303</td>
+                         <td>Dr. Lee</td>
+                         <td><a href="bcs303_notes.pdf">Notes</a></td>
+                      </tr>
+                     <tr>
+                         <td>1:00 PM - 2:00 PM</td>
+                         <td>BCS304</td>
+                         <td>Ms. Davis</td>
+                         <td><a href="bcs304_notes.pdf">Notes</a></td>
+                     </tr>
+                     <tr>
+                         <td>2:15 PM - 3:15 PM</td>
+                         <td>BMATS302</td>
+                         <td>Dr. Brown</td>
+                         <td><a href="bmats302_notes.pdf">Notes</a></td>
+                     </tr>
+                 </tbody>
+             </table>
+         </section>  
+        
+            <section class="courses">
+                <h3>Our Courses</h3>
+                <article class="course-item">
+                    <i class="fas fa-book"></i>
+                    <h4>BMATS301</h4>
+                    <details>
+                        <summary>Details</summary>
+                        <a href="bmats301_notes.pdf">Notes</a><br>
+                        <a href="bmats301_previous_papers.pdf">Previous papers</a>
+                    </details> 
+                </article>
+                <article class="course-item">
+                    <i class="fas fa-book"></i>
+                    <h4>BCS302</h4>
+                    <details>
+                        <summary>Details</summary>
+                        <a href="bcs302_notes.pdf">Notes</a><br>
+                        <a href="bcs302_previous_papers.pdf">Previous papers</a>
+                    </details> 
+                </article>
+                <article class="course-item">
+                    <i class="fas fa-book"></i>
+                    <h4>BCS303</h4>
+                    <details>
+                        <summary>Details</summary>
+                        <a href="bcs303_notes.pdf">Notes</a><br>
+                        <a href="bcs303_previous_papers.pdf">Previous papers</a>
+                    </details>    
+                </article>
+                <article class="course-item">
+                    <i class="fas fa-book"></i>
+                    <h4>BCS304</h4>
+                    <details>
+                        <summary>Details</summary>
+                        <a href="bcs304_notes.pdf">Notes</a><br>
+                        <a href="bcs304_previous_papers.pdf">Previous papers</a>
+                    </details>    
+                </article>
+            </section>
+        </main>
+    
+        <footer>
+            <p>&copy; <span id="year"></span> Friends Group. All rights reserved.</p>
+        </footer>
+    
+
+
+    <script src="main.js"></script>
+    </body>
+    </html>
+                        
+    
