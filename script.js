@@ -21,3 +21,4 @@ function updateDateTime() {
 setInterval(updateDateTime, 1000);
 // Initial call to display the date and time immediately
 updateDateTime();
+
