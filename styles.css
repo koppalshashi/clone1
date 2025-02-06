@@ -95,10 +95,10 @@ footer {
 .news-ticker {
     background-color: #4CAF50; /* Green background */
     color: white; /* White text */
-    padding: 10px 0; /* Padding for the ticker */
+    padding: 5px 0; /* Padding for the ticker */
     text-align: center; /* Center the text */
     font-weight: bold; /* Bold text */
-    font-size: 30px; /* Font size */
+    font-size: 20px; /* Font size */
     position: relative; /* Positioning */
     z-index: 1000; /* Ensure it appears above other content */
 }
@@ -136,7 +136,7 @@ h4 {
 .timetable {
     display: flex;
     justify-content: space-between; /* Space between the two tables */
-    margin-bottom: 20px; /* Space below the timetable section */
+    margin-bottom: 30px; /* Space below the timetable section */
 }
 
 .monday-timetable,
@@ -160,6 +160,79 @@ body {
     font-size: 1.3em;
     margin-bottom: 20px;
     font-weight: bold;
-    text-align: center;
+    text-align:center;
 }
 /* time :end */
+
+/* upcoming events */
+.timetable-events {
+    display: flex; /* Use flexbox to align items side by side */
+    justify-content: space-between; /* Space between the timetable and events */
+    margin-bottom: 30px; /* Space below the section */
+    position: relative; /* Position relative for absolute positioning of events */
+}
+
+.monday-timetable {
+    width: 47%; /* Adjust width as needed */
+}
+
+.upcoming-events {
+    color: red;
+    width: 25%; /* Adjust width as needed */
+    background: #1b9eb6; /* Light background for contrast */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(188, 202, 33, 0.1);
+    overflow: hidden; /* Hide overflow for animation */
+    position: relative; /* Position relative for animation */
+}
+
+.upcoming-events h4 {
+    margin-bottom: 30px; /* Space below the heading */
+    
+}
+
+.upcoming-events ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    position: absolute; /* Position absolute for animation */
+    bottom: 0; /* Start from the bottom */
+    animation: scroll-up 8s linear infinite; /* Animation for scrolling */
+}
+
+.upcoming-events li {
+    margin-bottom: 10px; /* Space between list items */
+    color: yellow;
+}
+
+/* Keyframes for scrolling animation */
+@keyframes scroll-up {
+    0% {
+        transform: translateY(100%); /* Start from below the visible area */
+    }
+    100% {
+        transform: translateY(-2%); /* Move to above the visible area */
+    }
+}
+/* upcoming events :end */
+
+
+@media (max-width: 768px) {
+    /* Styles for devices with a width of 768px or less */
+    .timetable-events {
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    .monday-timetable, .upcoming-events {
+        width: 100%; /* Full width on mobile */
+        margin: 0; /* Remove margins */
+    }
+}
+
+.header {
+    width: 100%; /* Full width */
+}
+img {
+    max-width: 100%; /* Scale images to fit their container */
+    height: auto; /* Maintain aspect ratio */
+}
