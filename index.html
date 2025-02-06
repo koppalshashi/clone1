@@ -16,6 +16,7 @@
                 <div class="date-time" id="dateTime"></div>
             </ul>
         </nav>
+        
         <div class="header-left">
             <img src="logo1.jpeg" alt="Logo" class="header-image">
         </div> 
@@ -36,57 +37,72 @@
         <section class="hero">
             <h2>Welcome to Friends Education Web</h2>
             <p>Your gateway to access Updates</p>
-        </section> 
-
+        </section>    
         
-
+            <!-- Timetable and Upcoming Events Section -->
+            <div class="timetable-events">
+                <!-- Monday Timetable -->
+                <div class="monday-timetable">
+                    <h4>Monday</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col">Time</th>
+                                <th scope="col">Course</th>
+                                <th scope="col">Instructor</th>
+                                <th scope="col">Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>9:00 AM - 10:00 AM</td>
+                                <td>BMATS301</td>
+                                <td>Dr. Smith</td>
+                                <td><a href="bmats301_notes.pdf">Notes</a></td>
+                            </tr>
+                            <tr>
+                                <td>10:15 AM - 11:15 AM</td>
+                                <td>BCS302</td>
+                                <td>Prof. Johnson</td>
+                                <td><a href="bcs302_notes.pdf">Notes</a></td>
+                            </tr>
+                            <tr>
+                                <td>11:30 AM - 12:30 PM</td>
+                                <td>BCS303</td>
+                                <td>Dr. Lee</td>
+                                <td><a href="bcs303_notes.pdf">Notes</a></td>
+                            </tr>
+                            <tr>
+                                <td>1:00 PM - 2:00 PM</td>
+                                <td>BCS304</td>
+                                <td>Ms. Davis</td>
+                                <td><a href="bcs304_notes.pdf">Notes</a></td>
+                            </tr>
+                            <tr>
+                                <td>2:15 PM - 3:15 PM</td>
+                                <td>BMATS302</td>
+                                <td>Dr. Brown</td>
+                                <td><a href="bmats302_notes.pdf">Notes</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
         
-            <!-- Monday Timetable -->
-            <div class="monday-timetable">
-                <h4>Monday</h4>
-                <table>
-                    <thead>
-                        <tr>
-                            <th scope="col">Time</th>
-                            <th scope="col">Course</th>
-                            <th scope="col">Instructor</th>
-                            <th scope="col">Notes</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>9:00 AM - 10:00 AM</td>
-                            <td>BMATS301</td>
-                            <td>Dr. Smith</td>
-                            <td><a href="bmats301_notes.pdf">Notes</a></td>
-                        </tr>
-                        <tr>
-                            <td>10:15 AM - 11:15 AM</td>
-                            <td>BCS302</td>
-                            <td>Prof. Johnson</td>
-                            <td><a href="bcs302_notes.pdf">Notes</a></td>
-                        </tr>
-                        <tr>
-                            <td>11:30 AM - 12:30 PM</td>
-                            <td>BCS303</td>
-                            <td>Dr. Lee</td>
-                            <td><a href="bcs303_notes.pdf">Notes</a></td>
-                        </tr>
-                        <tr>
-                            <td>1:00 PM - 2:00 PM</td>
-                            <td>BCS304</td>
-                            <td>Ms. Davis</td>
-                            <td><a href="bcs304_notes.pdf">Notes</a></td>
-                        </tr>
-                        <tr>
-                            <td>2:15 PM - 3:15 PM</td>
-                            <td>BMATS302</td>
-                            <td>Dr. Brown</td>
-                            <td><a href="bmats302_notes.pdf">Notes</a></td>
-                        </tr>
-                    </tbody>
-                </table>
+                <!-- Upcoming Events Section -->
+                <aside class="upcoming-events">
+                    <h3>📢Upcoming Events</h3><br>
+                    <ul>
+                        <li>📅 1Webinar on Career Guidance - March 15</li>
+                        <li>🎉2 Annual Day Celebration - April 20</li>
+                        <li>📢 3New Course Launch - Next Week</li>
+                        <li>📅 4Webinar on Career Guidance - March 15</li>
+                        <li>🎉 5Annual Day Celebration - April 20</li>
+                        <li>🎉 6Annual Day Celebration - April 20</li>
+                        <li>🎉 7Annual Day Celebration - April 20</li>
+                    </ul>
+                </aside>
             </div>
+        </main>
         
             <!-- Tuesday Timetable -->
             <div class="tuesday-timetable">
@@ -133,9 +149,9 @@
             </tbody>
         </table>
     </div>
-      
-        <br>
      
+        <br>
+    
 <!-- Wednesday Timetable -->
 <div class="Wednesday-timetable">
 <h4>Wednesday</h4>
@@ -230,7 +246,7 @@
                 </tbody>
             </table>
   </div>
-        
+   
         <!-- Friday Timetable -->
         
             <div class="Friday-timetable">
@@ -323,8 +339,9 @@
                      </tr>
                  </tbody>
              </table>
-         </div>
-        
+            </div>
+    </main>
+        <main>
             <section class="courses">
                 <h3>Our Courses</h3>
                 <article class="course-item">
@@ -365,13 +382,16 @@
                 </article>
             </section>
         </main>
-    
+        
+
+       
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
         <footer>
             <p>&copy; <span id="year"></span> Friends Group. All rights reserved.</p>
         </footer>
-    
-
-
     <script src="script.js"></script>
     </body>
     </html>
