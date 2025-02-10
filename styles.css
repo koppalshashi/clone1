@@ -4,14 +4,12 @@
     padding: 0;
     
 }
-
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
     
 }
-
 header {
     background: #35424a;
     color: #ffffff;
@@ -19,11 +17,9 @@ header {
     text-align: center;
     
 }
-
 header .logo h1 {
     margin: 0;
 }
-
 nav ul {
     list-style: none;
     padding: 0;
@@ -31,14 +27,10 @@ nav ul {
     text-align: right;
     justify-content:top;
 }
-
 nav ul li {
     display: inline;
     margin: 0 15px;
-   
-
 }
-
 nav ul li a {
     color: #ffffff;
     text-decoration: none;
@@ -49,11 +41,9 @@ nav ul li a {
     padding: 50px 20px;
     text-align: center;
 }
-
 .hero h2 {
     margin-bottom: 20px;
 }
-
 .btn {
     background: #35424a;
     color: #ffffff;
@@ -61,27 +51,6 @@ nav ul li a {
     text-decoration: none;
     border-radius: 5px;
 }
-
-.courses {
-    padding: 30px;
-    text-align: center;
-}
-
-.course-item {
-    display: inline-block;
-    width: 40%;
-    margin: 20px;
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.course-item i {
-    font-size: 40px;
-    color: #35424a;
-}
-
 footer {
     text-align: center;
     padding: 10px 0;
@@ -102,93 +71,45 @@ footer {
     position: relative; /* Positioning */
     z-index: 1000; /* Ensure it appears above other content */
 }
-/* timetable */
-marquee {
-    width: 100%; /* Full width */
-}
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-}
-.timetable {
-    display: flex;
-    justify-content: space-between; /* Space between the two tables */
-    
-}
-table {
-    border-collapse: collapse;
-    width: 103%; /* Adjust width as needed */
-    margin-bottom: 20px;
-}
-th, td {
-    border: 1px solid #ccc;
-    padding: 8px;
-    text-align: left;
-}
-th {
-    background-color: #f4f4f4;
-}
-h4 {
-    margin-top: 20px;
-}
-
-.timetable {
-    display: flex;
-    justify-content: space-between; /* Space between the two tables */
-    margin-bottom: 30px; /* Space below the timetable section */
-}
-
-.monday-timetable,
-.tuesday-timetable,
-.Wednesday-timetable,
-.Thursday-timetable,
-.Friday-timetable,
-.Saturady-timetable {
-    width: 47%; /* Adjust width as needed */
-    margin: 0 10px; /* Reduce horizontal margin to bring tables closer */
-}
-/* .timetable end */
-
 /* time */
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
     text-align: left;
+
 }
 .date-time {
     font-size: 1.3em;
     margin-bottom: 20px;
     font-weight: bold;
-    text-align:center;
+    text-align:left;
 }
 /* time :end */
 
+/* Upcoming Events */
 /* upcoming events */
 .timetable-events {
     display: flex; /* Use flexbox to align items side by side */
     justify-content: space-between; /* Space between the timetable and events */
-    margin-bottom: 30px; /* Space below the section */
+    margin-bottom: 20px; /* Space below the section */
     position: relative; /* Position relative for absolute positioning of events */
-}
-
-.monday-timetable {
-    width: 47%; /* Adjust width as needed */
 }
 
 .upcoming-events {
     color: red;
-    width: 25%; /* Adjust width as needed */
-    background: #1b9eb6; /* Light background for contrast */
-    padding: 20px;
-    border-radius: 5px;
+    width: 120%; /* Adjust width as needed */
+    padding: 50px;
+    background-color:#333;
+    border-radius: 10px;
     box-shadow: 0 2px 5px rgba(188, 202, 33, 0.1);
     overflow: hidden; /* Hide overflow for animation */
     position: relative; /* Position relative for animation */
 }
 
 .upcoming-events h4 {
-    margin-bottom: 30px; /* Space below the heading */
+    margin-bottom: 0%; /* Space below the heading */
+    background-color: white;
+    align-items: end;
     
 }
 
@@ -197,12 +118,14 @@ body {
     padding: 0; /* Remove padding */
     position: absolute; /* Position absolute for animation */
     bottom: 0; /* Start from the bottom */
-    animation: scroll-up 8s linear infinite; /* Animation for scrolling */
+    animation: scroll-up 6s linear infinite; /* Animation for scrolling */
+    color: white;
+    
 }
 
 .upcoming-events li {
-    margin-bottom: 10px; /* Space between list items */
-    color: yellow;
+    margin-bottom: 5px; /* Space between list items */
+    
 }
 
 /* Keyframes for scrolling animation */
@@ -223,16 +146,6 @@ body {
         flex-direction: column; /* Stack elements vertically */
     }
 
-    .monday-timetable, .upcoming-events {
-        width: 100%; /* Full width on mobile */
-        margin: 0; /* Remove margins */
-    }
+   
 }
 
-.header {
-    width: 100%; /* Full width */
-}
-img {
-    max-width: 100%; /* Scale images to fit their container */
-    height: auto; /* Maintain aspect ratio */
-}
